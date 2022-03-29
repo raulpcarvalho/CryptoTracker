@@ -32,7 +32,7 @@
           {{coin.current_price | currency:'USD'}}
         </td>
         <td [ngClass]="coin.price_change_percentage_24h > 0 ? 'text-success': 'text-danger'">
-          {{coin.price_change_percentage_24h.toLocaleString()}}
+          {{coin.price_change_percentage_24h.toLocaleString() | currency:'USD'}}
         </td>
         <td>
           {{coin.total_volume.toLocaleString()}}

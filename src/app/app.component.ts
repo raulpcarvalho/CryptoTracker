@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
     );
 
   }
-
+  //API from www.coingecko.com//
   ngOnInit() {
     this.http
     .get<Coin[]>(
